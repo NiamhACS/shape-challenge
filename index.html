@@ -1,0 +1,35 @@
+<h1>Bouncing Ball</h1>
+<body>
+    <form>
+        <label>Horizontal Velocity</label>
+        <input type = "number" id = "xSpd" value = "1"><br><br>
+        <label>Gravity Strength</label>
+        <input type = "number" id = "grav" value = "1"><br><br>
+        <label>Friction Strength</label>
+        <input type = "number" id = "fric" value = "1"><br><br>
+        <label>Bounciness</label>
+        <input type = "number" id = "bounce" value = "0.5"><br><br>
+        <input type = "button" onclick = "startBallMotion()" value = "Play">
+    </form>
+    <div id = "floor" style = "
+        z-index: 5;
+        position: absolute;
+        width: 4000px;
+        height: 10px;
+        left: 0px;
+        top: 800px;
+        background: rgba(92, 57, 17, 0.925);
+        border-radius: 0%;
+    "></div>
+    <div id = "ball" style = "
+        z-index: 5;
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        left: 50px;
+        top: 250px;
+        background: lightseagreen;
+        border-radius: 50%;
+    "></div>
+</body>
+<script src = "./ball.js"></script>
